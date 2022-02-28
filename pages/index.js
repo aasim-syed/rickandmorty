@@ -22,14 +22,14 @@ export default function Home(results) {
   const toast = useToast();
 
   return (
-    <Flex direction="column" justify="center" align="center">
-      <Head>
+    <Flex  style={{background:'url("https://c.tenor.com/uo3d6Q2cniMAAAAC/rick-and-morty-trippy.gif")'}} direction="column" justify="center" align="center">
+      <Head >
         <title>NextJS Apollo Crash Course</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Box mb={4} flexDirection="column" align="center" justify="center" py={8}>
-        <Heading as="h1" size="2xl" mb={8}>
+        <Heading style={{background:'black',color:'white'}} as="h1" size="2xl" mb={8}>
           Rick and Morty{" "}
         </Heading>
         <form
@@ -54,8 +54,9 @@ export default function Home(results) {
             }
           }}
         >
-          <Stack maxWidth="350px" width="100%" isInline mb={8}>
+          <Stack style={{background:'url(https://c.tenor.com/zMkJHcE3uqoAAAAS/rick-and.gif)'}} maxWidth="350px" width="100%" isInline mb={8}>
             <Input
+              style={{color:'red'}}
               placeholder="Search"
               value={search}
               border="none"
@@ -84,7 +85,7 @@ export default function Home(results) {
       </Box>
 
       <footer className={styles.footer}>
-        Powered by Energy Drinks 🥫 and YouTube Subscribers.
+        NOTHING HERE YET!👀🥲
       </footer>
     </Flex>
   );
